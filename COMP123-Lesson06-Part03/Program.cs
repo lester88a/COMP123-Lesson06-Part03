@@ -10,8 +10,11 @@ namespace COMP123_Lesson06_Part03
     {
         static void Main(string[] args)
         {
-            Card newCard = new Card("Ace", Suits.HEARTS);
-            newCard.Show();
+            //Card newCard = new Card(Face.ACE, Suits.HEARTS);
+            //Console.WriteLine(newCard.ToString());
+
+            Deck newDeck = new Deck();
+            Console.WriteLine(newDeck.pickCard(0));
 
             waitForAnyKey();
         }

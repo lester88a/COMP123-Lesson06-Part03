@@ -9,11 +9,11 @@ namespace COMP123_Lesson06_Part03
     class Card
     {
         //Instance variables +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        private string _face;
+        private int _face;
         private string _suit;//type
 
         //Properties +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public string Face 
+        public int Face 
         {
             get 
             {
@@ -29,16 +29,17 @@ namespace COMP123_Lesson06_Part03
         }
 
         //Constructors++++++++++++++++++++++++++++
-        public Card(string face, string suit)
+        public Card(int face, string suit)
         {
             this._face = face; //asign the value
             this._suit = suit;
         }
         
-        //Methods+++++++++++++++++++++++++++++++++++
-        public void Show()
+        //Overridden Methods+++++++++++++++++++++++++++++++++++
+        public override string ToString()
         {
-            Console.WriteLine("{0} of {1}", this._face, this._suit); //Ace of Heart
+            return this._face + " of " + this._suit;
+            //Console.WriteLine("{0} of {1}", this._face, this._suit); //Ace of Heart
         }
     }
 }

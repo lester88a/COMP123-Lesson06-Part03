@@ -8,6 +8,7 @@ namespace COMP123_Lesson06_Part03
 {
     class Face
     {
+        //public static int ACE = 1; //changeable
         public const int ACE = 1;
         public const int TWO = 2;
         public const int THREE = 3;
