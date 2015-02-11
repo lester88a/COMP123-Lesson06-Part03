@@ -10,6 +10,18 @@ namespace COMP123_Lesson06_Part03
     {
         static void Main(string[] args)
         {
+            Card newCard = new Card("Ace", "Heart");
+            newCard.Show();
+
+            waitForAnyKey();
+        }
+
+        private static void waitForAnyKey()
+        {
+            Console.WriteLine();
+            Console.WriteLine("++++++++++++++++++");
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
     }
 }
