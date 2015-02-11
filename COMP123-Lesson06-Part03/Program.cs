@@ -10,7 +10,7 @@ namespace COMP123_Lesson06_Part03
     {
         static void Main(string[] args)
         {
-            Card newCard = new Card("Ace", "Heart");
+            Card newCard = new Card("Ace", Suits.HEARTS);
             newCard.Show();
 
             waitForAnyKey();
