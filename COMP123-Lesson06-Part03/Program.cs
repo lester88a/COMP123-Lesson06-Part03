@@ -12,9 +12,13 @@ namespace COMP123_Lesson06_Part03
         {
             //Card newCard = new Card(Face.ACE, Suits.HEARTS);
             //Console.WriteLine(newCard.ToString());
-
+            int rdNumber;
+            Random rdn = new Random();
+            rdNumber = rdn.Next(0, 53);
             Deck newDeck = new Deck();
-            Console.WriteLine(newDeck.pickCard(0));
+
+            Console.WriteLine("Random Number is: {0}.", rdNumber);
+            Console.WriteLine(newDeck.pickCard(rdNumber));
 
             waitForAnyKey();
         }

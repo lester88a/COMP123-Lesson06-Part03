@@ -27,12 +27,16 @@ namespace COMP123_Lesson06_Part03
         private void _buildDeck()
         {
             string[] suits = { Suits.CLUBS, Suits.DIAMONDS, Suits.HEARTS, Suits.SPADES };
-            //int[] faces = { Face.ACE, Face.TWO,Face.THREE,Face.FOUR,Face.FIVE};
+            //int[] faces = { Face.ACE, Face.TWO,Face.THREE,Face.FOUR,Face.FIVE,Face.SIX,Face.SEVEN};
             for (int i = 0; i < suits.Length; i++)
             {
                 for (int fc = 1; fc < 14; fc++)
                 {
-                    this._addCard(i, fc, suits[i]);
+                    for (int st = 0; st < 52; st++)
+                    {
+                        this._addCard(st, fc, suits[i]);
+                    }
+                    
                 }
                 
             }
